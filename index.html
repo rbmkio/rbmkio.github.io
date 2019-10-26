@@ -1,1 +1,294 @@
-Hello, World!
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Radish — cross-platform desktop client for Redis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cross-platform management GUI for Redis" />
+        <meta name="keywords" content="Redis, GUI, desktop, client" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Main css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <div>
+                    <a class="logo" href="#home">RBMK<span class="text-primary">.</span></a>
+                </div>                 
+                <div class="buy-button">
+                    <a href="#downloads" class="btn btn-primary">Download</a>
+                </div><!--end login button-->
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="#features">Radish <span class="badge badge-warning ml-2">0.9 Alpha</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#downloads">Info</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-home" style="background: url('images/saas/home-shape.png') center center; height: auto;" id="home">
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-9 text-center mt-0 mt-md-5 pt-0 pt-md-5">
+                                <div class="title-heading margin-top-100">
+                                    <h1 class="heading mb-3">Radish — cross-platform desktop client designed exclusively for Redis</h1>
+                                    <p class="para-desc mx-auto text-muted">Explore and manage your data using GUI or execute arbitrary commands — all in one app <span class="badge badge-warning ml-2">0.9 Alpha</span></p>
+                                    <div class="mt-4 pt-2">
+                                        <a href="#downloads" class="btn btn-primary">Get Extended Trial <i class="mdi mdi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="home-dashboard">
+                                    <img src="images/screenshots/main.png" alt="" class="img-fluid">
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end container--> 
+                </div><!--end home desc center-->
+            </div><!--end home center-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Partners start -->
+        <section class="section border-bottom pt-sm-60">
+
+        </section><!--end section-->
+        <!-- Partners End -->
+
+        <!-- Feature Start -->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                                <img src="images/icon/big.svg" alt="">
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="title-2">Manage connections</h4>
+                                <p class="text-muted mb-0">Connect to local instances and servers hosted in the cloud.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 col-12 mt-5 mt-sm-0">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                                <img src="images/icon/user.svg" alt="">
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="title-2">Use GUI</h4>
+                                <p class="text-muted mb-0">Explore Redis data structures with a user-friendly GUI.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 col-12 mt-5 mt-sm-0">
+                        <div class="features">
+                            <div class="image position-relative d-inline-block">
+                                <img src="images/icon/code.svg" alt="">
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="title-2">Execute commands</h4>
+                                <p class="text-muted mb-0">Unleash full potential of Redis with commands and transactions.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="home-shape-bottom">
+                        <img src="images/shapes/curve-light.png" alt="" class="img-fluid mx-auto d-block">
+                    </div> 
+                </div><!--end row-->
+            </div> <!-- END CONTAINER -->
+        </section><!--end section-->
+        <!-- Feature End --> 
+
+        <!-- Start -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <img src="images/screenshots/win.jpg" class="img-fluid shadow" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ml-lg-3">
+                            <h4 class="title mb-4">Made for your operation system</h4>
+                            <p class="text-muted">We designed this application to look good on all supported platforms. This means you can access your Redis servers from Windows, macOS and Linux.</p>
+                            <ul class="list-unstyled feature-list text-muted">
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Windows</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>macOS</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Linux <span class="badge badge-info ml-2">coming soon</span></li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="home-shape-bottom">
+                        <img src="images/shapes/curve-white.png" alt="" class="img-fluid mx-auto d-block">
+                    </div> 
+                </div><!--end row-->
+            </div> <!-- END CONTAINER -->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Client Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-60">
+                            <h4 class="main-title mb-4">What our users said about <span class="text-primary">Radish</span> project</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Try <span class="text-primary font-weight-bold">Radish</span> and give us feedback so we could improve our product.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="customer-testi text-left">
+                                    <img src="images/icon/coffee-cup.svg" height="80" class="rounded shadow float-left mr-3" alt="">
+                                    <div class="content overflow-hidden d-block p-3 shadow rounded bg-white">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" Looks great! Cannot wait to try. "</p>
+                                        <h6 class="text-primary">- Our developer <small class="text-muted">DEV</small></h6>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            
+                            <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="customer-testi text-left">
+                                    <img src="images/icon/desk.svg" height="80" class="rounded shadow float-left mr-3" alt="">
+                                    <div class="content overflow-hidden d-block p-3 shadow rounded bg-white">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star-half text-warning"></i></li>
+                                        </ul>
+                                        <p class="text-muted mt-2">" Still in alpha, but it's already good. "</p>
+                                        <h6 class="text-primary">- Our CTO <small class="text-muted">CTO</small></h6>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div id="downloads" class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-60">
+                            <h4 class="title mb-4">Get extended trial version.</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">We offer free trial licenses while our product is still in early preview.</p>
+                        
+                            <div class="mt-3">
+                                <a href="https://github.com/rbmkio/radish/releases" class="btn btn-primary mt-2 mr-2">Download Now</a>
+<!--                                <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">Free Trial</a>-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="home-shape-bottom">
+                        <img src="images/shapes/curve-dark.png" alt="" class="img-fluid mx-auto d-block">
+                    </div> 
+                </div><!--end row-->
+            </div> <!-- END CONTAINER -->
+        </section><!--end sectipn-->
+        <!-- Client End -->
+
+        <!-- Footer Start -->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-left">
+                            <p class="mb-0">© 2019 RBMK.io.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0"></div>
+                </div>
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+            <i class="mdi mdi-chevron-up d-block"> </i> 
+        </a>
+        <!-- Back to top -->
+
+        <!-- javascript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
