@@ -28,6 +28,8 @@
         <!-- Main css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+        <link href="css/site/main.css" rel="stylesheet" type="text/css" />
+
     </head>
 
     <body>
@@ -85,7 +87,7 @@
                                     <h1 class="heading mb-3">Radish — cross-platform desktop client designed exclusively for Redis</h1>
                                     <p class="para-desc mx-auto text-muted">Explore and manage your data using GUI or execute arbitrary commands — all in one app <span class="badge badge-warning ml-2">0.9 Alpha</span></p>
                                     <div class="mt-4 pt-2">
-                                        <a href="#downloads" class="btn btn-primary">Get Extended Trial <i class="mdi mdi-chevron-right"></i></a>
+                                        <a href="#downloads" class="btn btn-primary">Get free trial <i class="mdi mdi-chevron-right"></i></a>
                                     </div>
                                 </div>
 
@@ -193,6 +195,59 @@
         </section><!--end section-->
         <!-- End -->
 
+        <!-- Start Form -->
+        <section id="downloads" class="section" style="background: #89939f;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="section-title mr-lg-4">
+                            <h4 class="main-title text-light mb-4">Get free trial license</h4>
+                            <p class="text-light para-desc mb-0">We offer a free trial period of 6 months while our product is still in alpha version. Sign up and we will send the license to your email. Or you can just download and try it for free.</p>
+                            <div class="mt-4 pt-2">
+                                <a id="downloadButton" class="btn btn-primary">Download <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
+                            <ul id="downloadList" class="list-unstyled mb-0"></ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-5 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="bg-white rounded p-4 shadow">
+                            <h5 class="text-capitalize text-center">Get free license</h5>
+                            <form>
+                                <div class="row mt-4">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3">
+                                            <label>First Name <span class="text-danger">*</span></label>
+                                            <input name="name" id="firstNameInput" type="text" class="form-control" placeholder="First Name" required="">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3">
+                                            <label>Last Name <span class="text-danger">*</span></label>
+                                            <input name="name" id="lastNameInput" type="text" class="form-control" placeholder="Last Name" required="">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3">
+                                            <label>Email <span class="text-danger">*</span></label>
+                                            <input type="email" id="emailInput" class="form-control" placeholder="Email" name="email" required="">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-12 mb-0">
+                                        <button id="demoButton" class="btn btn-primary btn-block">Get License</button>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </form><!--end form-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Form -->
+
         <!-- Client Start -->
         <section class="section">
             <div class="container">
@@ -245,22 +300,6 @@
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-
-            <div id="downloads" class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-60">
-                            <h4 class="title mb-4">Get extended trial version.</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">We offer free trial licenses while our product is still in early preview.</p>
-                        
-                            <div class="mt-3">
-                                <a href="https://github.com/rbmkio/radish/releases" class="btn btn-primary mt-2 mr-2">Download Now</a>
-<!--                                <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">Free Trial</a>-->
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
             
             <div class="container-fluid">
                 <div class="row">
@@ -299,7 +338,12 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/scrollspy.min.js"></script>
+
         <!-- Main Js -->
         <script src="js/app.js"></script>
+
+        <!-- App -->
+        <script src="js/site/download.js"></script>
+        <script src="js/site/demo.js"></script>
     </body>
 </html>
