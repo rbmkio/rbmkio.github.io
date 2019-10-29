@@ -1,9 +1,13 @@
 (function () {
 
     var demoButton = $("#demoButton");
+    var downloadButton = $("#downloadButton");
+
     var firstNameInput = $("#firstNameInput");
     var lastNameInput = $("#lastNameInput");
     var emailInput = $("#emailInput");
+
+    var downloadList = $("#downloadList");
 
     demoButton.click(function () {
 
@@ -29,6 +33,9 @@
                     demoButton.removeClass("btn-primary");
                     demoButton.addClass("btn-success");
                     demoButton.text("Email has been sent");
+
+                    var buttons = downloadList.children();
+                    buttons.show();
                 } else {
                     demoButton.removeClass("btn-primary");
                     demoButton.addClass("btn-warning");
@@ -43,6 +50,18 @@
         });
 
         return false;
+    });
+
+    downloadButton.click(function () {
+        var buttons = downloadList.children();
+        buttons.show();
+
+        return false;
+    });
+
+    $(document).ready(function () {
+        var buttons = downloadList.children();
+        buttons.hide();
     });
 
 })();
